@@ -13,7 +13,6 @@ public class NewBehaviourScript : MonoBehaviour
         totalDist = 0;
         startPos = transform.position.x;
         length = GetComponent<SpriteRenderer>().bounds.size.x;
-        Debug.Log(startPos + length);
     }
 
     void Update()
@@ -24,10 +23,8 @@ public class NewBehaviourScript : MonoBehaviour
 
         if (totalDist >= length)
         {
-            Debug.Log("Exceeded Move Limit");
             totalDist -= length;
             newPos = startPos + totalDist;
-            Debug.Log(newPos);
         }
 
         transform.position = new Vector3(newPos, transform.position.y, transform.position.z);

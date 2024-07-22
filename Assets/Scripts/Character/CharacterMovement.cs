@@ -6,6 +6,7 @@ public class CharacterMovement : MonoBehaviour
 {
 
     public float moveSpeed;
+    public GameObject TargetRotation;
     private Vector3 currentPos;
     private Vector3 newPos;
     private Vector3 move;
@@ -25,5 +26,7 @@ public class CharacterMovement : MonoBehaviour
         newPos = new Vector3(currentPos.x + move.x * moveSpeed * Time.deltaTime, currentPos.y, currentPos.z - move.z * moveSpeed * Time.deltaTime);
 
         transform.position = newPos;
+
+        transform.LookAt(TargetRotation.transform);
     }
 }

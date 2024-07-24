@@ -1,18 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class FloorToggle : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public GameObject Floor;
+
+    private void Start()
     {
-        
+        Floor.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider Character)
     {
-        
+        if (Character.CompareTag("Player"))
+        {
+            Floor.SetActive(true);
+        }
+    }
+    private void OnTriggerStay(Collider Character)
+    {
+        if (Character.CompareTag("Player")) {
+            Floor.SetActive(true);
+        }
+    }
+    private void OnTriggerExit(Collider Character)
+    {
+        if (Character.CompareTag("Player"))
+        {
+            Floor.SetActive(false);
+        }
     }
 }

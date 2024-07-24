@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-
     public GameObject Character;
     private Vector3 updatePosition = Vector3.zero;
     private Vector3 currentPosition = Vector3.zero;

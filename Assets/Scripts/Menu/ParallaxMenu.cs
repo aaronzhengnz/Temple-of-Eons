@@ -16,14 +16,13 @@ public class NewBehaviourScript : MonoBehaviour
         transformRect = GetComponent<RectTransform>();
         startPos = transformRect.anchoredPosition;
         length = transformRect.rect.width;
-        Debug.Log(startPos);
     }
 
     void Update()
     {
         dist = Time.deltaTime * parallaxEffect;
         totalDist += dist;
-        newPos = new Vector2(totalDist, 0);
+        newPos = new Vector2(totalDist, startPos.y);
 
         transformRect.anchoredPosition = newPos;
 

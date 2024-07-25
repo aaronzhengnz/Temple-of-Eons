@@ -1,32 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    private float length, newPos, totalDist, dist, startPos;
-    public GameObject cam;
+    private RectTransform transformRect;
+    private Vector2 newPos, startPos;
+    private float totalDist, dist, length;
     public float parallaxEffect;
 
     void Start()
     {
         totalDist = 0;
-        startPos = transform.position.x;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
+        transformRect = GetComponent<RectTransform>();
+        startPos = transformRect.anchoredPosition;
+        length = transformRect.rect.width;
+        Debug.Log(startPos);
     }
 
     void Update()
     {
         dist = Time.deltaTime * parallaxEffect;
-        newPos = transform.position.x + dist;
         totalDist += dist;
+        newPos = new Vector2(totalDist, 0);
+
+        transformRect.anchoredPosition = newPos;
 
         if (totalDist >= length)
         {
             totalDist -= length;
-            newPos = startPos + totalDist;
+            newPos = startPos;
         }
-
-        transform.position = new Vector3(newPos, transform.position.y, transform.position.z);
     }
 }

@@ -16,17 +16,14 @@ public class TimeWarp : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Alpha1))
             {
-                Debug.Log("1 Pressed");
                 Character.transform.position = PastTimeWarp.transform.Find("Teleport Point").transform.position;
             }
             if (Input.GetKey(KeyCode.Alpha2))
             {
-                Debug.Log("2 Pressed");
                 Character.transform.position = PresentTimeWarp.transform.Find("Teleport Point").transform.position;
             }
             if (Input.GetKey(KeyCode.Alpha3))
             {
-                Debug.Log("3 Pressed");
                 Character.transform.position = FutureTimeWarp.transform.Find("Teleport Point").transform.position;
             }
         }

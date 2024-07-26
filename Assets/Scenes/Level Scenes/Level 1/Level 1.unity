@@ -3562,7 +3562,7 @@ GameObject:
   - component: {fileID: 159165663}
   - component: {fileID: 159165664}
   m_Layer: 0
-  m_Name: Collider
+  m_Name: Collision Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8839,7 +8839,7 @@ GameObject:
   - component: {fileID: 348722457}
   - component: {fileID: 348722458}
   m_Layer: 0
-  m_Name: Collider
+  m_Name: Collision Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17478,7 +17478,7 @@ GameObject:
   - component: {fileID: 722318792}
   - component: {fileID: 722318793}
   m_Layer: 0
-  m_Name: Collider
+  m_Name: Collision Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18576,7 +18576,7 @@ GameObject:
   - component: {fileID: 762654046}
   - component: {fileID: 762654047}
   m_Layer: 0
-  m_Name: Collider
+  m_Name: Collision Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20160,7 +20160,7 @@ GameObject:
   - component: {fileID: 823860431}
   - component: {fileID: 823860432}
   m_Layer: 0
-  m_Name: Collider
+  m_Name: Collision Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21383,7 +21383,7 @@ GameObject:
   - component: {fileID: 872526412}
   - component: {fileID: 872526413}
   m_Layer: 0
-  m_Name: Collider
+  m_Name: Collision Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26371,7 +26371,7 @@ GameObject:
   - component: {fileID: 1056366545}
   - component: {fileID: 1056366546}
   m_Layer: 0
-  m_Name: Collider
+  m_Name: Collision Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40436,7 +40436,7 @@ GameObject:
   - component: {fileID: 1649110212}
   - component: {fileID: 1649110213}
   m_Layer: 0
-  m_Name: Collider
+  m_Name: Collision Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44309,7 +44309,7 @@ GameObject:
   - component: {fileID: 1845972221}
   - component: {fileID: 1845972222}
   m_Layer: 0
-  m_Name: Collider
+  m_Name: Collision Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

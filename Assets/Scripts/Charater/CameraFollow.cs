@@ -16,8 +16,9 @@ public class CameraFollow : MonoBehaviour
     private void Update()
     {
         updatePosition.x = Character.transform.position.x - 3.1f;
+        updatePosition.y = Character.transform.position.y + 6.61f;
         updatePosition.z = Character.transform.position.z;
-        currentPosition = new Vector3(updatePosition.x, currentPosition.y, updatePosition.z);
+        currentPosition = new Vector3(updatePosition.x, updatePosition.y, updatePosition.z);
         transform.position = currentPosition;
     }
 }

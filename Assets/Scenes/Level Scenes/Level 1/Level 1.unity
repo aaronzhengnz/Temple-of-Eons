@@ -2637,6 +2637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 117380215}
+  - component: {fileID: 117380216}
   m_Layer: 0
   m_Name: Shifting Terrain 5
   m_TagString: Untagged
@@ -2661,6 +2662,19 @@ Transform:
   - {fileID: 1952551417}
   m_Father: {fileID: 970185027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &117380216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117380214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialTerrainActive: 0
 --- !u!1 &118157693
 GameObject:
   m_ObjectHideFlags: 0
@@ -4837,6 +4851,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 205670129}
+  - component: {fileID: 205670130}
   m_Layer: 0
   m_Name: Shifting Terrain 1
   m_TagString: Untagged
@@ -4861,6 +4876,19 @@ Transform:
   - {fileID: 143556020}
   m_Father: {fileID: 1900315576}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &205670130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205670128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialTerrainActive: 1
 --- !u!1001 &206161350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15253,6 +15281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 633742507}
+  - component: {fileID: 633742508}
   m_Layer: 0
   m_Name: Shifting Terrain 4
   m_TagString: Untagged
@@ -15277,6 +15306,19 @@ Transform:
   - {fileID: 381598283}
   m_Father: {fileID: 970185027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &633742508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633742506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialTerrainActive: 0
 --- !u!1 &636493034
 GameObject:
   m_ObjectHideFlags: 0
@@ -15654,6 +15696,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 655192090}
+  - component: {fileID: 655192091}
   m_Layer: 0
   m_Name: Shifting Terrain 4
   m_TagString: Untagged
@@ -15678,6 +15721,19 @@ Transform:
   - {fileID: 82796656}
   m_Father: {fileID: 1900315576}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &655192091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655192089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialTerrainActive: 0
 --- !u!1001 &658543708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24148,6 +24204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 981235596}
+  - component: {fileID: 981235597}
   m_Layer: 0
   m_Name: Shifting Terrain 1
   m_TagString: Untagged
@@ -24172,6 +24229,19 @@ Transform:
   - {fileID: 120828996}
   m_Father: {fileID: 970185027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &981235597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981235595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialTerrainActive: 0
 --- !u!1001 &985997433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26013,6 +26083,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1056636965}
+  - component: {fileID: 1056636966}
   m_Layer: 0
   m_Name: Shifting Terrain 5
   m_TagString: Untagged
@@ -26037,6 +26108,19 @@ Transform:
   - {fileID: 2030280352}
   m_Father: {fileID: 1900315576}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1056636966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056636964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialTerrainActive: 1
 --- !u!1 &1057899233
 GameObject:
   m_ObjectHideFlags: 0
@@ -30575,6 +30659,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1226494230}
+  - component: {fileID: 1226494231}
   m_Layer: 0
   m_Name: Shifting Terrain 5
   m_TagString: Untagged
@@ -30599,6 +30684,19 @@ Transform:
   - {fileID: 1998706898}
   m_Father: {fileID: 1302776505}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1226494231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226494229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialTerrainActive: 0
 --- !u!1001 &1229199135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31309,6 +31407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1257696402}
+  - component: {fileID: 1257696403}
   m_Layer: 0
   m_Name: Shifting Terrain 4
   m_TagString: Untagged
@@ -31333,6 +31432,19 @@ Transform:
   - {fileID: 917417078}
   m_Father: {fileID: 1302776505}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1257696403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257696401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialTerrainActive: 0
 --- !u!1001 &1263117492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35226,6 +35338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1419545636}
   - component: {fileID: 1419545637}
+  - component: {fileID: 1419545638}
   m_Layer: 0
   m_Name: Shifting Terrain 1
   m_TagString: Untagged
@@ -35262,6 +35375,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InitialTerrainActive: 0
+--- !u!114 &1419545638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419545635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialTerrainActive: 1
 --- !u!1 &1422333948
 GameObject:
   m_ObjectHideFlags: 0
@@ -38579,6 +38706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1598747710}
+  - component: {fileID: 1598747711}
   m_Layer: 0
   m_Name: Shifting Terrain 3
   m_TagString: Untagged
@@ -38603,6 +38731,19 @@ Transform:
   - {fileID: 170791746}
   m_Father: {fileID: 970185027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1598747711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598747709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialTerrainActive: 0
 --- !u!1 &1600602266
 GameObject:
   m_ObjectHideFlags: 0
@@ -40594,6 +40735,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1689093689}
+  - component: {fileID: 1689093690}
   m_Layer: 0
   m_Name: Shifting Terrain 2
   m_TagString: Untagged
@@ -40618,6 +40760,19 @@ Transform:
   - {fileID: 1089402844}
   m_Father: {fileID: 1302776505}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1689093690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689093688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialTerrainActive: 0
 --- !u!1001 &1692095347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44852,6 +45007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1911382203}
+  - component: {fileID: 1911382204}
   m_Layer: 0
   m_Name: Shifting Terrain 3
   m_TagString: Untagged
@@ -44876,6 +45032,19 @@ Transform:
   - {fileID: 405520049}
   m_Father: {fileID: 1302776505}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1911382204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911382202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialTerrainActive: 0
 --- !u!4 &1913916024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4ecb3ffe6a04e58489191785034c2e1a, type: 3}
@@ -45130,6 +45299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1933931922}
+  - component: {fileID: 1933931923}
   m_Layer: 0
   m_Name: Shifting Terrain 2
   m_TagString: Untagged
@@ -45154,6 +45324,19 @@ Transform:
   - {fileID: 1256716960}
   m_Father: {fileID: 970185027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1933931923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933931921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialTerrainActive: 0
 --- !u!1001 &1936151834
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47447,6 +47630,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2027038588}
+  - component: {fileID: 2027038589}
   m_Layer: 0
   m_Name: Shifting Terrain 3
   m_TagString: Untagged
@@ -47471,6 +47655,19 @@ Transform:
   - {fileID: 405146244}
   m_Father: {fileID: 1900315576}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2027038589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027038587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialTerrainActive: 1
 --- !u!1 &2027122933
 GameObject:
   m_ObjectHideFlags: 0
@@ -48572,6 +48769,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2088779633}
+  - component: {fileID: 2088779634}
   m_Layer: 0
   m_Name: Shifting Terrain 2
   m_TagString: Untagged
@@ -48596,6 +48794,19 @@ Transform:
   - {fileID: 2040488116}
   m_Father: {fileID: 1900315576}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2088779634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088779632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialTerrainActive: 0
 --- !u!4 &2089733510 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 62bb1924ddfb93544a2b6887a45f0038, type: 3}

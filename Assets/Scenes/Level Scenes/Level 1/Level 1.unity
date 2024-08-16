@@ -15288,7 +15288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &633742507
 Transform:
   m_ObjectHideFlags: 0
@@ -15733,7 +15733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialTerrainActive: 0
+  InitialTerrainActive: 1
 --- !u!1001 &658543708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24211,7 +24211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &981235596
 Transform:
   m_ObjectHideFlags: 0
@@ -31414,7 +31414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1257696402
 Transform:
   m_ObjectHideFlags: 0
@@ -35344,7 +35344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1419545636
 Transform:
   m_ObjectHideFlags: 0
@@ -38699,7 +38699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1598747710
 Transform:
   m_ObjectHideFlags: 0
@@ -45030,7 +45030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a736b798a0ef34e41ac52eca192d4a16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialTerrainActive: 0
+  InitialTerrainActive: 1
 --- !u!4 &1913916024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4ecb3ffe6a04e58489191785034c2e1a, type: 3}
@@ -48762,7 +48762,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2088779633
 Transform:
   m_ObjectHideFlags: 0

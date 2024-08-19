@@ -2635,6 +2635,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.19999999, y: 0.49999997, z: 0.19999999}
   m_Center: {x: 0, y: 0.24999999, z: 0}
+--- !u!114 &104119341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104119334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b84393911629e84e8dc08e00205626e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentMap: {fileID: 21862208}
+  PastMap: {fileID: 756411901}
+  PresentMap: {fileID: 21862208}
+  FutureMap: {fileID: 1337105175}
+  targetName: Shifting Terrain
 --- !u!1 &106552547
 GameObject:
   m_ObjectHideFlags: 0
@@ -9526,6 +9543,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bf6c05dfabd9a7748bb9ce876eea17e9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 368990184}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bf6c05dfabd9a7748bb9ce876eea17e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 368990185}
   m_SourcePrefab: {fileID: 100100000, guid: bf6c05dfabd9a7748bb9ce876eea17e9, type: 3}
 --- !u!1 &368990180 stripped
 GameObject:
@@ -9595,12 +9615,33 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.2161076
   m_Height: 0.72681475
   m_Direction: 1
   m_Center: {x: 0.005707979, y: 0.33717835, z: -0.018351793}
+--- !u!65 &368990185
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368990180}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.34392023, y: 0.6659955, z: 0.27234805}
+  m_Center: {x: 0.0011928082, y: 0.3387758, z: -0.0155074}
 --- !u!1001 &369289572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10854,6 +10895,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57dacad5a516c6b4daed9dfbc30a14c1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 104119338}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57dacad5a516c6b4daed9dfbc30a14c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 104119341}
   m_SourcePrefab: {fileID: 100100000, guid: 57dacad5a516c6b4daed9dfbc30a14c1, type: 3}
 --- !u!1 &423111938
 GameObject:
@@ -14973,6 +15017,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57dacad5a516c6b4daed9dfbc30a14c1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 591218790}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57dacad5a516c6b4daed9dfbc30a14c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 591218793}
   m_SourcePrefab: {fileID: 100100000, guid: 57dacad5a516c6b4daed9dfbc30a14c1, type: 3}
 --- !u!4 &591218788 stripped
 Transform:
@@ -15005,6 +15052,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.19999999, y: 0.49999997, z: 0.19999999}
   m_Center: {x: 0, y: 0.24999999, z: 0}
+--- !u!114 &591218793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591218789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b84393911629e84e8dc08e00205626e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentMap: {fileID: 1337105175}
+  PastMap: {fileID: 756411901}
+  PresentMap: {fileID: 21862208}
+  FutureMap: {fileID: 1337105175}
+  targetName: Shifting Terrain
 --- !u!4 &596105113 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4ecb3ffe6a04e58489191785034c2e1a, type: 3}
@@ -34699,6 +34763,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57dacad5a516c6b4daed9dfbc30a14c1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1360240020}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57dacad5a516c6b4daed9dfbc30a14c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1360240023}
   m_SourcePrefab: {fileID: 100100000, guid: 57dacad5a516c6b4daed9dfbc30a14c1, type: 3}
 --- !u!4 &1360240018 stripped
 Transform:
@@ -34731,6 +34798,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.19999999, y: 0.49999997, z: 0.19999999}
   m_Center: {x: 0, y: 0.24999999, z: 0}
+--- !u!114 &1360240023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360240019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b84393911629e84e8dc08e00205626e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentMap: {fileID: 756411901}
+  PastMap: {fileID: 756411901}
+  PresentMap: {fileID: 21862208}
+  FutureMap: {fileID: 1337105175}
+  targetName: Shifting Terrain
 --- !u!1 &1363518814
 GameObject:
   m_ObjectHideFlags: 0

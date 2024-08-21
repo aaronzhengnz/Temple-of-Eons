@@ -8,48 +8,56 @@ public class TerrainSignalDisruptors : MonoBehaviour
     public GameObject PastMap;
     public GameObject PresentMap;
     public GameObject FutureMap;
-    public string targetName;
 
     private void OnTriggerStay(Collider Character)
     {
         if (Character.CompareTag("Player"))
         {
-            Debug.Log("Entered");
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("E Pressed");
-                if (CurrentMap == PastMap)
+                if (CurrentMap.name == PastMap.transform.parent.transform.parent.name)
                 {
-                    ToggleAllChildren(PastMap.transform, targetName);
+                    ToggleTerrain(PastMap.transform);
                 }
-                else if (CurrentMap == PresentMap)
+                else if (CurrentMap.name == PresentMap.transform.parent.transform.parent.name)
                 {
-                    ToggleAllChildren(PresentMap.transform, targetName);
-                    ToggleAllChildren(PastMap.transform, targetName);
+                    ToggleTerrain(PresentMap.transform);
+                    ToggleTerrain(PastMap.transform);
                 }
-                else if (CurrentMap == FutureMap)
+                else if (CurrentMap.name == FutureMap.transform.parent.transform.parent.name)
                 {
-                    ToggleAllChildren(FutureMap.transform, targetName);
-                    ToggleAllChildren(PresentMap.transform, targetName);
-                    ToggleAllChildren(PastMap.transform, targetName);
+                    ToggleTerrain(FutureMap.transform);
+                    ToggleTerrain(PresentMap.transform);
+                    ToggleTerrain(PastMap.transform);
                 }
             }
         }
     }
 
-    void ToggleAllChildren(Transform mapParent, string targetParentName)
+    void ToggleTerrain(Transform map)
     {
-        Transform targetParent = mapParent.Find(targetParentName);
-        if (targetParent != null)
+        Transform shiftingTerrainObject = map.Find("Shifting Terrain");
+        for (int i = 0; i < shiftingTerrainObject.childCount; i++)
         {
-            foreach (Transform child in targetParent)
+            Transform terrainObject = shiftingTerrainObject.GetChild(i).transform.Find("Terrain");
+            Transform barrierObject = shiftingTerrainObject.GetChild(i).transform.Find("Barrier");
+            if (terrainObject != null)
             {
-                child.gameObject.SetActive(!child.gameObject.activeSelf);
+                bool isActive = terrainObject.gameObject.activeSelf;
+                Debug.Log(terrainObject.gameObject.activeSelf);
+                if (isActive)
+                {
+                    Debug.Log("deactivating");
+                    terrainObject.gameObject.SetActive(false);
+                    barrierObject.gameObject.SetActive(true);
+                }
+                else if (isActive == false)
+                {
+                    Debug.Log("activating");
+                    terrainObject.gameObject.SetActive(true);
+                    barrierObject.gameObject.SetActive(false);
+                }
             }
-        }
-        else
-        {
-            Debug.LogWarning($"Target parent '{targetParentName}' not found in {mapParent.name}.");
         }
     }
 }

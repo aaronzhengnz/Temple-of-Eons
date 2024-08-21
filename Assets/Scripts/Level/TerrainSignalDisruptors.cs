@@ -47,13 +47,11 @@ public class TerrainSignalDisruptors : MonoBehaviour
                 Debug.Log(terrainObject.gameObject.activeSelf);
                 if (isActive)
                 {
-                    Debug.Log("deactivating");
                     terrainObject.gameObject.SetActive(false);
                     barrierObject.gameObject.SetActive(true);
                 }
                 else if (isActive == false)
                 {
-                    Debug.Log("activating");
                     terrainObject.gameObject.SetActive(true);
                     barrierObject.gameObject.SetActive(false);
                 }

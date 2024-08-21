@@ -47,13 +47,11 @@ public class ObstacleSignalDisruptor : MonoBehaviour
                 Debug.Log(particleSystem.gameObject.activeSelf);
                 if (isActive)
                 {
-                    Debug.Log("deactivating");
                     particleSystem.gameObject.SetActive(false);
                     barrierObject.gameObject.SetActive(false);
                 }
                 else if (isActive == false)
                 {
-                    Debug.Log("activating");
                     particleSystem.gameObject.SetActive(true);
                     barrierObject.gameObject.SetActive(true);
                 }

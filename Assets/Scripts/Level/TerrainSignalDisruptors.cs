@@ -13,7 +13,7 @@ public class TerrainSignalDisruptors : MonoBehaviour
     {
         if (Character.CompareTag("Player"))
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.F))
             {
                 if (CurrentMap.name == PastMap.transform.parent.transform.parent.name)
                 {

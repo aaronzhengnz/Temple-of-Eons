@@ -13,7 +13,7 @@ public class ObstacleSignalDisruptor : MonoBehaviour
     {
         if (Character.CompareTag("Player"))
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.F))
             {
                 if (CurrentMap.name == PastMap.transform.parent.transform.parent.name)
                 {
@@ -44,7 +44,6 @@ public class ObstacleSignalDisruptor : MonoBehaviour
             if (particleSystem != null)
             {
                 bool isActive = particleSystem.gameObject.activeSelf;
-                Debug.Log(particleSystem.gameObject.activeSelf);
                 if (isActive)
                 {
                     particleSystem.gameObject.SetActive(false);

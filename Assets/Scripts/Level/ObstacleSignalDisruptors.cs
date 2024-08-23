@@ -17,24 +17,24 @@ public class ObstacleSignalDisruptor : MonoBehaviour
             {
                 if (CurrentMap.name == PastMap.transform.parent.transform.parent.name)
                 {
-                    ToggleTerrain(PastMap.transform);
+                    ToggleObstacle(PastMap.transform);
+                    ToggleObstacle(PresentMap.transform);
+                    ToggleObstacle(FutureMap.transform);
                 }
                 else if (CurrentMap.name == PresentMap.transform.parent.transform.parent.name)
                 {
-                    ToggleTerrain(PresentMap.transform);
-                    ToggleTerrain(PastMap.transform);
+                    ToggleObstacle(PresentMap.transform);
+                    ToggleObstacle(FutureMap.transform);
                 }
                 else if (CurrentMap.name == FutureMap.transform.parent.transform.parent.name)
                 {
-                    ToggleTerrain(FutureMap.transform);
-                    ToggleTerrain(PresentMap.transform);
-                    ToggleTerrain(PastMap.transform);
+                    ToggleObstacle(FutureMap.transform);
                 }
             }
         }
     }
 
-    void ToggleTerrain(Transform map)
+    void ToggleObstacle(Transform map)
     {
         Transform obstacleObject = map.Find("Particles");
         for (int i = 0; i < obstacleObject.childCount; i++)

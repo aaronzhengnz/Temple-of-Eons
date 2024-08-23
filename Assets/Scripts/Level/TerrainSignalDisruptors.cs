@@ -18,17 +18,17 @@ public class TerrainSignalDisruptors : MonoBehaviour
                 if (CurrentMap.name == PastMap.transform.parent.transform.parent.name)
                 {
                     ToggleTerrain(PastMap.transform);
+                    ToggleTerrain(PresentMap.transform);
+                    ToggleTerrain(FutureMap.transform);
                 }
                 else if (CurrentMap.name == PresentMap.transform.parent.transform.parent.name)
                 {
                     ToggleTerrain(PresentMap.transform);
-                    ToggleTerrain(PastMap.transform);
+                    ToggleTerrain(FutureMap.transform);
                 }
                 else if (CurrentMap.name == FutureMap.transform.parent.transform.parent.name)
                 {
                     ToggleTerrain(FutureMap.transform);
-                    ToggleTerrain(PresentMap.transform);
-                    ToggleTerrain(PastMap.transform);
                 }
             }
         }

@@ -3,21 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[ExecuteInEditMode]
 public class SettingsScripts : MonoBehaviour
 {
-
     public GameObject SettingsPage;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        SettingsPage.SetActive(false);
-    }
-
-    // Update is called once per frame
+    // This will run in both edit mode and play mode
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        // In the Editor, make sure the SettingsPage is hidden
+        if (!Application.isPlaying)
+        {
+            if (SettingsPage != null)
+                SettingsPage.SetActive(false);
+        }
+
+        // In play mode, check for Escape key input
+        if (Application.isPlaying && Input.GetKeyDown(KeyCode.Escape))
         {
             ToggleSettings();
         }
@@ -25,7 +27,8 @@ public class SettingsScripts : MonoBehaviour
 
     public void ToggleSettings()
     {
-        SettingsPage.SetActive(!SettingsPage.activeSelf);
+        if (SettingsPage != null)
+            SettingsPage.SetActive(!SettingsPage.activeSelf);
     }
 
     public void ExitLevel()

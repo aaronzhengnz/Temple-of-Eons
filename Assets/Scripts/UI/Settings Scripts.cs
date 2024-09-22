@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[ExecuteInEditMode]
 public class SettingsScripts : MonoBehaviour
 {
     public GameObject SettingsPage;
 
-    // This will run in both edit mode and play mode
+    void Start()
+    {
+        // Hide the SettingsPage when the game starts in play mode
+        if (!Application.isPlaying && SettingsPage != null)
+        {
+            SettingsPage.SetActive(false);
+        }
+    }
+
     void Update()
     {
-        // In the Editor, make sure the SettingsPage is hidden
-        if (!Application.isPlaying)
-        {
-            if (SettingsPage != null)
-                SettingsPage.SetActive(false);
-        }
-
         // In play mode, check for Escape key input
         if (Application.isPlaying && Input.GetKeyDown(KeyCode.Escape))
         {
@@ -28,7 +28,14 @@ public class SettingsScripts : MonoBehaviour
     public void ToggleSettings()
     {
         if (SettingsPage != null)
+        {
             SettingsPage.SetActive(!SettingsPage.activeSelf);
+            Debug.Log("Settings Page active: " + SettingsPage.activeSelf);
+        }
+        else
+        {
+            Debug.LogWarning("SettingsPage is not assigned in the Inspector!");
+        }
     }
 
     public void ExitLevel()
@@ -38,6 +45,10 @@ public class SettingsScripts : MonoBehaviour
 
     public void ExitGame()
     {
-        Application.Quit();
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false; // Stop play mode in the Editor
+#else
+        Application.Quit(); // Quit the application
+#endif
     }
 }

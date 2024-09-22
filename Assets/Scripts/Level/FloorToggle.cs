@@ -7,6 +7,7 @@ public class FloorToggle : MonoBehaviour
 {
 
     public GameObject Floor;
+    public GameObject TimeUI;
 
     private void Start()
     {

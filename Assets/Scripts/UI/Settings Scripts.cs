@@ -32,4 +32,9 @@ public class SettingsScripts : MonoBehaviour
     {
         SceneManager.LoadScene("Level Select Scene");
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }

@@ -11031,6 +11031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93eb598be2f912d42a430658900b91fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: Level 1 - Complete
 --- !u!4 &426616805 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4ecb3ffe6a04e58489191785034c2e1a, type: 3}

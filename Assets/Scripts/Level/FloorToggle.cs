@@ -19,12 +19,15 @@ public class FloorToggle : MonoBehaviour
         if (Character.CompareTag("Player"))
         {
             Floor.SetActive(true);
+            TimeUI.SetActive(true);
         }
     }
     private void OnTriggerStay(Collider Character)
     {
-        if (Character.CompareTag("Player")) {
+        if (Character.CompareTag("Player"))
+        {
             Floor.SetActive(true);
+            TimeUI.SetActive(true);
         }
     }
     private void OnTriggerExit(Collider Character)
@@ -32,6 +35,7 @@ public class FloorToggle : MonoBehaviour
         if (Character.CompareTag("Player"))
         {
             Floor.SetActive(false);
+            TimeUI.SetActive(false);
         }
     }
 }

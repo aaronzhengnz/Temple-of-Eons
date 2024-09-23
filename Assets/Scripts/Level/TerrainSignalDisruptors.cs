@@ -44,7 +44,6 @@ public class TerrainSignalDisruptors : MonoBehaviour
             if (terrainObject != null)
             {
                 bool isActive = terrainObject.gameObject.activeSelf;
-                Debug.Log(terrainObject.gameObject.activeSelf);
                 if (isActive)
                 {
                     terrainObject.gameObject.SetActive(false);
